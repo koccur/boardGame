@@ -10,8 +10,6 @@ a{
 }
 
 `
-
-
 export function AppHeader() {
 
     return (
@@ -19,7 +17,7 @@ export function AppHeader() {
             <nav>
                 <Navigation>
                     <Link to="/">BoardGame</Link>
-                    <Link to="/mybooks">mybooks</Link>
+                    <Link to="/mygames">My games</Link>
                     <Link to="/about">About</Link>
                 </Navigation>
             </nav>
