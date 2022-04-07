@@ -41,7 +41,7 @@ border: 0;
                 
     }
     &:focus{
-        outline: #2081a1 dashed;
+        outline: solid #2081a1 medium;
     }
 `
 
@@ -134,6 +134,7 @@ export const ColumnFieldSet = styled.fieldset`
 export const Row = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: center;
 `
 
 export const Column = styled.div`
@@ -149,7 +150,12 @@ export const RequiredLabel = styled.label`
     }
 `
 export const ErrorMessage = styled.span`
+    border: 1px solid #e00000;
+    padding: 8px;
+    display: block;
     color: #e00000;
+    margin-top: 8px;
+    border-radius: 16px;
 `
 
 export const Tooltip = styled.span`
@@ -226,4 +232,57 @@ export const Input = styled.input`
     }
   }
   }
+`
+
+export const A11YLabel = styled.label`
+    padding: 12px;
+    cursor: pointer;
+`
+
+export const BorderdDiv = styled.div`
+border:1px solid black;
+padding:24px;
+flex-direction: column;
+display:flex;`
+
+export const SmallCheckbox = styled.input`
+width: 12px;
+height: 12px;
+cursor: pointer;
+`
+export const MediumCheckbox = styled.input`
+width: 16px;
+cursor: pointer;
+height:16px;`
+
+export const BigSearch = styled.label`
+font-size: 28px;
+margin-bottom:4px;
+display: block;
+`
+export const ContrastButton = styled.button`
+        margin-top:4px;
+    border: 0;
+    line-height: 2;
+    padding: 0 12px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    outline: none;
+    background-color: #C70000;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    &:hover{
+        background-color: #ff0000;
+    }
+    &:active{
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
 `

@@ -12,12 +12,13 @@ export default function App() {
     <>
       <GlobalStyles />
       <React.Suspense fallback={<span>Loading...</span>}>
-        <AppHeader />
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/myBooks" element={<MyBooks />} />
-            <Route path="/about" element={<About />} />
-        </Routes>
+        {/* <AppHeader /> */}
+        <MyBooks/>
+        {/* <Routes> */}
+            {/* <Route path="/" element={<Home />} /> */}
+            {/* <Route path="/myBooks" element={<MyBooks />} /> */}
+            {/* <Route path="/about" element={<About />} /> */}
+        {/* </Routes> */}
       </React.Suspense>
     </>
   );

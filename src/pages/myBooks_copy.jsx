@@ -93,7 +93,7 @@ export function MyBooks() {
     return (
         <>
             <Wrapper>
-                <h1>MyBooks registration form </h1>
+                <h1>MyBooks</h1>
                 <Row>
                     <BuildForm />
                     <A11yTodos />

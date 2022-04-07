@@ -25,10 +25,16 @@ const Column = styled.div`
 
 export function A11yTodos() {
     return (
+        <aside>
         <StyledForm>
+        
             <Row>
                 <input type="checkbox" id="headings" />
                 <label for="headings">Wielkość nagłówków</label>
+            </Row>
+            <Row>
+                <input type="checkbox" id="contrast" />
+                <label for="contrast">Kontrasty</label>
             </Row>
             <Row>
                 <input type="checkbox" id="labels" />
@@ -40,51 +46,40 @@ export function A11yTodos() {
             </Row>
             <Row>
                 <input type="checkbox" id="stylesButtonsAndErrors" />
-                <label for="stylesButtonsAndErrors">Stylowanie butona i errorów</label>
+                <label for="stylesButtonsAndErrors">Odpowiednia wielkość przycisków i ich rozmiar</label>
+            </Row>
+
+            <Row>
+                <input type="checkbox" id="hiding"/>
+                <label for="hiding">Ukrywanie elementow na stronie</label>
+            </Row>
+            <Row>
+                <input type="checkbox" id="errors"/>
+                <label for="errors">Błędy</label>
+            </Row>
+            <Row>
+                <input type="checkbox" id="focus"/>
+                <label for="focus">Focus</label>
             </Row>
             <Row>
                 <input type="checkbox" id="outline" />
                 <label for="outline">Outline na focus</label>
             </Row>
             <Row>
-                <input type="checkbox" />
-                <label>Odpowiednia wielkość przycisków i odleglosci</label>
+                <input type="checkbox" id="tooltip"/>
+                <label for="tooltip">Tooltip, SVG</label>
             </Row>
-            <Column>
-                <ul>
-                    <li>Zgodnie z wytycznymi 4.5:1 dla textów poniżej 18px</li>
-                    <li>3:1 dla textów powyżej 18px</li>
-                </ul>
-            </Column>
+
             <Row>
-                <input type="checkbox" />
-                <label>Widoczność elementów zero opacity, z-index off-screen</label>
-            </Row>
-            <Column>
-                <ul>
-                    <li>Jeśli chcemy to hidden, visibility albo display, jesli koniecznie musimy to dodajmy: aria-hidden</li>
-                </ul>
-            </Column>
-            <Row>
-                <input type="checkbox" />
-                <label>Focus</label>
-            </Row>
-            <Column>
-                <ul>
-                    <li>Wszystkie elementy linki/buttony/kontrolki powinny byc focusowalne</li>
-                    <li>Inne elementy jesli mają byc to dodajmy do nich aria-role</li>
-                    <li>Porządek powinien być zachowany od lewej do prawej i od gory do dolu, nie używamy tabindexu o ile nie musimy</li>
-                </ul>
-            </Column>
-            <Row>
-                <input type="checkbox" />
-                <label>Pola wymagane</label>
+                <input type="checkbox" id="semantic"/>
+                <label for="semantic">Semantyka html5</label>
             </Row>
             <Row>
-                <input type="checkbox" />
-                <label>Tooltip</label>
+                <input type="checkbox" id="ariaAndRoles"/>
+                <label for="ariaAndRoles">Aria i role</label>
             </Row>
         </StyledForm>
+        </aside>
     )
 }
 
