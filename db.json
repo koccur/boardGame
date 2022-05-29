@@ -1,0 +1,84 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "SomeGameFirst",
+      "OwnerID": 1
+    },
+    {
+      "id": 2,
+      "title": "Magic title",
+      "OwnerID": 1
+    },
+    {
+      "id": 3,
+      "title": "qweqw",
+      "players": 0,
+      "minAge": 0,
+      "time": 0,
+      "OwnerID": 1
+    },
+    {
+      "id": 4,
+      "title": "Super new title",
+      "players": 4,
+      "minAge": 12,
+      "time": 60,
+      "OwnerID": 1
+    },
+    {
+      "id": 5,
+      "title": "werwer",
+      "players": 12,
+      "minAge": 12,
+      "time": 12,
+      "OwnerID": 1
+    },
+    {
+      "id": 6,
+      "title": "darkham",
+      "players": 32,
+      "minAge": 12,
+      "time": 123,
+      "type": "",
+      "OwnerID": 1
+    },
+    {
+      "id": 7,
+      "title": "",
+      "players": 0,
+      "minAge": 0,
+      "time": 0,
+      "type": "",
+      "OwnerID": 1
+    },
+    {
+      "id": 8,
+      "title": "",
+      "players": 0,
+      "minAge": 0,
+      "time": 0,
+      "type": "Criminal",
+      "OwnerID": 1
+    },
+    {
+      "id": 9,
+      "title": "BloomBloosom",
+      "players": 4,
+      "minAge": 12,
+      "time": 60,
+      "type": "Adventure",
+      "OwnerID": 1
+    }
+  ],
+  "users": [
+    {
+      "name": "hipcio",
+      "userId": 1
+    },
+    {
+      "name": "Maorycy konopka",
+      "userId": 1
+    }
+  ]
+}

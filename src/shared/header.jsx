@@ -8,10 +8,7 @@ margin:0 12px ;
 a{
     margin:0 12px;
 }
-
 `
-
-
 export function AppHeader() {
 
     return (
@@ -19,7 +16,8 @@ export function AppHeader() {
             <nav>
                 <Navigation>
                     <Link to="/">BoardGame</Link>
-                    <Link to="/mybooks">mybooks</Link>
+                    <Link to="/mygames">My games</Link>
+                    <Link to="/myfriends">My friends</Link>
                     <Link to="/about">About</Link>
                 </Navigation>
             </nav>
